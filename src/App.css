@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Gothic+Coding&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+::selection{
+    background-color: greenyellow;
+    color: black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(21, 21, 21);
+}
+.header{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+}
+.header .logo{
+    width: 70px;
+    height: 70px;
+}
+.header span{
+    color: white;
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: 'Lato';
+}
+.header span:last-child{
+    color: rgb(30, 233, 255);
+}
+.code-area{
+    width: 80vw;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.code-area .usercode{
+    width: 40%;
+}
+.code-area .usercode label{
+    color: white;
+    font-size: 18px;
+    display: block;
+    font-family: 'Roboto';
+    padding: 5px 0px;
+}
+.code-area .usercode textarea{
+    padding: 10px;
+    width: 85%;
+    resize: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all;
+    transition-duration: 0.4s;
+    font-family: 'Nanum Gothic Coding';
+    font-size: 15px;
+    color: white;
+}
+.code-area .usercode textarea:focus{
+    border: 2px solid greenyellow;
+    color: rgb(187, 255, 86);
+}
+.code-area .usercode textarea::placeholder{
+    color: rgb(146, 146, 146);
+}
+
+.code-area .usercode button{
+    background-color: rgb(251, 255, 245);
+    color: black;
+    font-family: 'Lato';
+    width: 30%;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin-left: 60%;
+    transition-duration: 0.2s;
+}
+.code-area .usercode button:hover{
+    background-color: greenyellow;
+}
+.code-area .result-area{
+    width: 40%;
+    background-color: rgb(46, 46, 46);
+    border-radius: 10px;
+    border: none;
+    overflow-y: auto;
+}
+.code-area .result-area label{
+    display: block;
+    color: white;
+    font-weight: 600;
+    font-family: 'Lato';
+    font-size: 15px;
+}
+.code-area .result-area #data{
+    background-color: transparent;
+    color: white;
+    padding: 10px;   
+}
