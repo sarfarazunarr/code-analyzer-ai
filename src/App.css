@@ -90,19 +90,45 @@
 .code-area .result-area{
     width: 40%;
     background-color: rgb(46, 46, 46);
-    border-radius: 10px;
     border: none;
     overflow-y: auto;
 }
 .code-area .result-area label{
     display: block;
+    padding: 10px;
     color: white;
     font-weight: 600;
+    background-color: transparent;
     font-family: 'Lato';
-    font-size: 15px;
+    font-size: 20px;
 }
 .code-area .result-area #data{
     background-color: transparent;
     color: white;
-    padding: 10px;   
+    padding: 10px; 
+    border: none;
+    border-radius: 10px;  
 }
+/* Mobile responsive */
+@media (min-width: 320px) and (max-width: 480px) {
+    .code-area{
+        width: 90vw;
+        flex-direction: column;
+    }
+    .code-area .usercode{
+        width: 100%;
+    }
+    .code-area .usercode button{
+        width: 40%;
+        margin-left: 50%;
+    }
+    .code-area .result-area{
+        margin-top: 15px;
+        width: 80vw;
+        border-radius: 10px;
+    }
+    .code-area .result-area #data{
+        width: 100%;
+    }
+    
+  }
