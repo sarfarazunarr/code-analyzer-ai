@@ -17,8 +17,8 @@ To use CoderAI, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sarfarazunarr/code-analyzer-ai.git
-   cd code-analyzer-ai
+   git clone https://github.com/sarfarazunarr/coderAI.git
+   cd coderAI
    ```
 
 2. Install dependencies:
